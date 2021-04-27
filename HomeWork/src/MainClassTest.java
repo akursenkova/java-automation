@@ -6,6 +6,6 @@ public class MainClassTest extends MainClass {
 
     @Test
     public void testGetClassString() {
-        Assert.assertTrue("String doesn't contain word hello", this.getClassString().toLowerCase(Locale.ROOT).contains("hello"));
+        Assert.assertTrue("String doesn't contain \"hello\" or \"Hello\" words", this.getClassString().contains("hello") || this.getClassString().contains("Hello"));
     }
 }
